@@ -30,14 +30,17 @@ A Colorado Board of Elections employee, Tom, has tasked us with determining the 
 In summary, we believe this script can possibly be used to determine voter turnout in a statewide election. For example, the county_size and county_voter variables can be refactored as follows: 
 
 state_size = 0
+
 state_voter = 0
+
 winning_percentage2 = 0
 
 After setting these variables, the nested loop can be adjusted as follows: 
 
 if (votes2 > state_size) and (statevote_percentage > winning_percentage2):
-            state_size = votes2
-            winning_percentage2 = statevote_percentage
-            winning_state = states
-            
+
+  state_size = votes2
+  winning_percentage2 = statevote_percentage
+  winning_state = states
+
 In doing so, we will be able to maintain the accuracy for this script as it is modified for a larger or smaller data set.
